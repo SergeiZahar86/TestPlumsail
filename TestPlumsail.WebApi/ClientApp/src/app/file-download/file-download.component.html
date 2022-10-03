@@ -1,0 +1,41 @@
+<h2>Выберите файл для загрузки</h2>
+
+<input class="form-control"
+       id="formFile"
+       ng2FileSelect
+       [uploader]=uploader
+       type="file"
+       name="uploads"/><br>
+<div class="progress m-md-4">
+    <div class="progress-bar"
+         role="progressbar"
+         aria-valuenow="uploader.progress"
+         aria-valuemin="0"
+         aria-valuemax="100"></div>
+</div>
+<ul *ngFor="let item of uploader.queue">
+
+    <div class="d-block m-md-3">
+        {{item.file.name}}
+        <div class="ms-3 btn-group"
+             role="group"
+             aria-label="Basic mixed styles example">
+            <button class="btn btn-primary"
+                    value="Загрузить"
+                    (click)="item.upload()">Загрузить
+            </button>
+            <button class="btn btn-danger"
+                    value="Удалить"
+                    (click)="item.remove()">Удалить
+            </button>
+        </div>
+    </div>
+</ul>
+
+<a class="btn bg-danger"
+   (click)=downloadFile()
+   download>
+    ссылко
+</a>
+
+

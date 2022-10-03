@@ -1,9 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using WeatherForecastLB.Models;
 
-namespace TestPlumsail.WebApi.Controllers;
+namespace WeatherForecastLB.Controllers;
 
+/// <summary>
+/// Контроллер получения сведений о погоде
+/// </summary>
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]/[action]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -19,8 +24,12 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// Получение сводки о погоде
+    /// </summary>
+    /// <returns></returns>
     [HttpGet]
-    public IEnumerable<WeatherForecast> Get()
+    public IEnumerable<WeatherForecast> GetWeather()
     {
         return Enumerable.Range(1, 5)
             .Select(index => new WeatherForecast

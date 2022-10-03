@@ -9,6 +9,10 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+.local-chromium
+.idea
+ClientApp/.angular/
+
 
 # Build results
 [Dd]ebug/

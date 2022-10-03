@@ -1,14 +1,14 @@
 {
-  "name": "testplumsail.webapi",
+  "name": "test_plumsail_loadfile",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "prestart": "node aspnetcore-https",
     "start": "run-script-os",
-    "start:windows": "ng serve --port 44410 --ssl --ssl-cert %APPDATA%\\ASP.NET\\https\\%npm_package_name%.pem --ssl-key %APPDATA%\\ASP.NET\\https\\%npm_package_name%.key",
-    "start:default": "ng serve --port 44410 --ssl --ssl-cert $HOME/.aspnet/https/${npm_package_name}.pem --ssl-key $HOME/.aspnet/https/${npm_package_name}.key",
+    "start:windows": "ng serve --port 44492 --ssl --ssl-cert %APPDATA%\\ASP.NET\\https\\%npm_package_name%.pem --ssl-key %APPDATA%\\ASP.NET\\https\\%npm_package_name%.key",
+    "start:default": "ng serve --port 44492 --ssl --ssl-cert $HOME/.aspnet/https/${npm_package_name}.pem --ssl-key $HOME/.aspnet/https/${npm_package_name}.key",
     "build": "ng build",
-    "build:ssr": "ng run TestPlumsail.WebApi:server:dev",
+    "build:ssr": "ng run Test_Plumsail_LoadFile:server:dev",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -25,10 +25,12 @@
     "@angular/router": "~13.0.1",
     "bootstrap": "^5.1.0",
     "jquery": "^3.5.1",
+    "ng2-file-upload": "^1.4.0",
     "oidc-client": "^1.11.5",
     "popper.js": "^1.16.0",
     "run-script-os": "^1.1.6",
     "rxjs": "~6.6.0",
+    "rxjs-compat": "^6.6.7",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
   },
@@ -46,6 +48,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "typescript": "~4.4.4"
-  },
-  "optionalDependencies": {}
+  }
 }

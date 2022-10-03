@@ -1,8 +1,49 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPlumsail.WebApi", "TestPlumsail.WebApi\TestPlumsail.WebApi.csproj", "{923074B7-4392-4F9F-AF66-F8C7A51494FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{8A21559D-7914-4390-B2CD-4DB3F6F81212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPlumsail.Persistence", "TestPlumsail.Persistence\TestPlumsail.Persistence.csproj", "{0586E2B5-0DC7-495E-921C-1FF878089159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{D32AC425-7DD7-4C28-A17B-DB8B680936F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertHtmlToPdf", "ConvertHtmlToPdf\ConvertHtmlToPdf.csproj", "{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConvertHtmlToPdfModule", "ConvertHtmlToPdfModule", "{D6291884-27FA-400E-A89B-2225416CEC26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WeatherForecastModule", "WeatherForecastModule", "{E024874A-B09D-4C0B-B93D-3AEF26180BF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecastLB", "WeatherForecastLB\WeatherForecastLB.csproj", "{2BD639BA-EAF4-4301-9A87-2838B34E109B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923074B7-4392-4F9F-AF66-F8C7A51494FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923074B7-4392-4F9F-AF66-F8C7A51494FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923074B7-4392-4F9F-AF66-F8C7A51494FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923074B7-4392-4F9F-AF66-F8C7A51494FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0586E2B5-0DC7-495E-921C-1FF878089159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0586E2B5-0DC7-495E-921C-1FF878089159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0586E2B5-0DC7-495E-921C-1FF878089159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0586E2B5-0DC7-495E-921C-1FF878089159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD639BA-EAF4-4301-9A87-2838B34E109B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD639BA-EAF4-4301-9A87-2838B34E109B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD639BA-EAF4-4301-9A87-2838B34E109B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD639BA-EAF4-4301-9A87-2838B34E109B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0586E2B5-0DC7-495E-921C-1FF878089159} = {8A21559D-7914-4390-B2CD-4DB3F6F81212}
+		{D6291884-27FA-400E-A89B-2225416CEC26} = {D32AC425-7DD7-4C28-A17B-DB8B680936F6}
+		{4DF90DA1-39A0-491C-A0BE-DDAD48CF8655} = {D6291884-27FA-400E-A89B-2225416CEC26}
+		{E024874A-B09D-4C0B-B93D-3AEF26180BF3} = {D32AC425-7DD7-4C28-A17B-DB8B680936F6}
+		{2BD639BA-EAF4-4301-9A87-2838B34E109B} = {E024874A-B09D-4C0B-B93D-3AEF26180BF3}
 	EndGlobalSection
 EndGlobal

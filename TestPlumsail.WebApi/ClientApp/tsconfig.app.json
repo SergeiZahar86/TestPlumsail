@@ -6,8 +6,9 @@
     "types": []
   },
   "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
+	  "src/main.ts",
+	  "src/polyfills.ts",
+	  "src/app/models/weather-forecast.ts"
   ],
   "include": [
     "src/**/*.d.ts"

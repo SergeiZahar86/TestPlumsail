@@ -1,5 +1,8 @@
-namespace TestPlumsail.WebApi;
+﻿namespace WeatherForecastLB.Models;
 
+/// <summary>
+/// Модель сведений о погоде
+/// </summary>
 public class WeatherForecast
 {
     public DateTime Date { get; set; }
